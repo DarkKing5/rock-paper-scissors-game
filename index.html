@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <h2>Камень-Ножницы-Бумага</h2>
+    <div class="game-container">
+        <div class="choice rock" onclick="playGame(0)">
+            <img src="rock.png" alt="Rock">
+        </div>
+        <div class="choice scissors" onclick="playGame(1)">
+            <img src="scissors.gif" alt="Scissors">
+        </div>
+        <div class="choice paper" onclick="playGame(2)">
+            <img src="paper.gif" alt="Paper">
+        </div>
+    </div>
+
+    <div id="result-animation" class="result-animation"></div>
+    <div id="message" class="message"></div>
+    <h3>История игр</h3>
+    <div id="history"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
